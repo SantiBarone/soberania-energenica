@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffdc8a" />
+    <meta name="description" content="Conocé el programa de Soberanía Energética de Alberti: energía solar, sustentabilidad y desarrollo local." />
+    <title>Soberanía Energética | Municipalidad de Alberti</title>
+    <link rel="preload" href="./assets/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="header-inner" aria-label="Organizaciones participantes">
+        <div class="brand-list">
+          <a class="brand-link" href="https://www.instagram.com/municipalidaddealberti/" aria-label="Municipalidad de Alberti">
+            <img src="./assets/images/logo-municipality.webp" alt="" />
+            <span class="brand-name">Municipalidad<br />de Alberti</span>
+          </a>
+          <a class="brand-link" href="https://www.edensa.com.ar/" aria-label="EDEN">
+            <img src="./assets/images/logo-edensa.webp" alt="Logo EDEN" />
+          </a>
+          <a class="brand-link" href="https://www.instagram.com/ecoplan.alberti/" aria-label="EcoPlan Alberti">
+            <img src="./assets/images/logo-ecoplan.webp" alt="Logo EcoPlan" />
+          </a>
+          <a class="brand-link" href="https://www.instagram.com/puntodigitalalberti/" aria-label="Punto Digital Alberti">
+            <img src="./assets/images/logo-punto-digital.webp" alt="Logo Punto Digital" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Soberanía Energética en Alberti">
+        <div class="hero-frame">
+          <picture>
+            <source srcset="./assets/images/hero-poster-wide.webp" media="(min-width: 48rem)" />
+            <img class="hero-poster" src="./assets/images/hero-poster-mobile.webp" alt="Paneles solares en Alberti" fetchpriority="high" />
+          </picture>
+          <video class="hero-title-video" autoplay muted playsinline loop preload="auto" aria-hidden="true">
+            <source src="./assets/videos/hero-desktop.mp4" type="video/mp4" media="(min-width: 48rem)" />
+            <source src="./assets/videos/hero-mobile.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-shade" aria-hidden="true"></div>
+          <div class="hero-copy">
+            <p>Energía ahorrada <strong id="six-month-energy">...</strong> kWh · En los últimos 6 meses</p>
+            <p>Ahorro económico <strong id="six-month-savings">...</strong> · En los últimos 6 meses</p>
+          </div>
+        </div>
+        <div class="discover-bar"><span class="discover-arrow" aria-hidden="true">↓</span>Deslizá para descubrir más</div>
+      </section>
+
+      <section class="savings-section section-shell" aria-labelledby="savings-title">
+        <div class="section-inner">
+          <header class="section-heading">
+            <h2 id="savings-title">Datos clave sobre el ahorro</h2>
+            <p id="current-month-summary">Cargando datos del mes...</p>
+          </header>
+
+          <div class="monthly" aria-label="Ahorro de energía mensual">
+            <div class="monthly-toolbar">
+              <p class="monthly-count"><span id="month-count">...</span> meses considerados</p>
+              <div class="slider-controls">
+                <button class="slider-button" type="button" data-direction="previous" aria-label="Meses anteriores" disabled>
+                  <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m10 3-5 5 5 5" /></svg>
+                </button>
+                <button class="slider-button" type="button" data-direction="next" aria-label="Meses siguientes">
+                  <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 3 5 5-5 5" /></svg>
+                </button>
+              </div>
+            </div>
+            <div class="slider-track" id="month-track" role="region" aria-label="Datos mensuales" tabindex="0"></div>
+            <p class="metrics-status" id="metrics-status" role="status" aria-live="polite"></p>
+          </div>
+
+          <section class="about-section" aria-labelledby="about-title">
+            <div class="about-copy">
+              <h2 id="about-title">Sobre el ahorro</h2>
+              <p>La energía está presente en cada hábito, en nuestros hogares, trabajos y comunidades, conectando a personas en todo el mundo. Pero los cambios climáticos y las cadenas de suministro interrumpidas nos plantean nuevos retos que debemos afrontar junto a las necesidades de siempre.</p>
+              <p>¿Cómo encontrar el equilibrio entre satisfacer las demandas de hoy y construir un futuro más sostenible?</p>
+            </div>
+            <div class="video-frame">
+              <iframe src="https://www.youtube-nocookie.com/embed/jLWTpvi9558" title="El iceberg de las energías renovables" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="about-conclusion">Transformar el sistema energético requiere ideas innovadoras y soluciones a medida. Estos pioneros están dedicando su energía a resolver los tres pilares del Trilema Energético Mundial: seguridad, equidad y sostenibilidad.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="points-section section-shell" aria-labelledby="points-title">
+        <div class="section-inner">
+          <header class="points-heading">
+            <h2 id="points-title">Puntos energéticos</h2>
+            <p>La energía está presente en cada hogar, escuela y comunidad. Cada acción, cada instalación y cada tecnología suma para un futuro más limpio y autónomo. Descubrí cómo los proyectos locales contribuyen a la soberanía energética y al cuidado del planeta.</p>
+            <p>Generando impacto local y global</p>
+          </header>
+          <div class="point-grid" id="point-grid" aria-label="Proyectos energéticos de Alberti"></div>
+
+          <div class="vision-section">
+            <div class="vision-inner">
+              <video class="loop-mark" data-src="./assets/videos/sustainability-loop.mp4" preload="none" playsinline muted loop aria-hidden="true"></video>
+              <p>Transformar la energía requiere visión, compromiso y creatividad. Los pioneros de la soberanía energética demuestran que seguridad, equidad y sostenibilidad pueden coexistir, generando beneficios tangibles para toda la comunidad.</p>
+            </div>
+          </div>
+
+          <p class="definition">La soberanía energética es la capacidad de una comunidad, región o país para tomar sus propias decisiones sobre la generación, distribución y consumo de energía, sin depender excesivamente de fuentes externas. Esto implica tener control sobre los recursos energéticos, la infraestructura, la tecnología y el conocimiento necesarios para satisfacer sus propias necesidades de manera autónoma y sostenible.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="site-footer">
+        <a class="footer-cta" href="https://www.instagram.com/ecoplan.alberti/" target="_blank" rel="noopener noreferrer">Descubrir más sobre la<br />Soberanía Energética</a>
+        <a class="share-link" href="https://wa.me/?text=https%3A%2F%2Fsoberania-energetica.vercel.app%2F" target="_blank" rel="noopener noreferrer">
+          Compartir la página
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 16.1c-.8 0-1.5.3-2.1.8l-7-4.1a3 3 0 0 0 0-1.6l7-4.1a3 3 0 1 0-.9-1.7l-7 4.1a3 3 0 1 0 0 5l7 4.1a3 3 0 1 0 3-2.5Z" /></svg>
+        </a>
+      </div>
+      <div class="credits">
+        <p class="credits-main"><strong>2025</strong> · soporte técnico <a href="https://www.instagram.com/_santi.barone_/" target="_blank" rel="noopener noreferrer">Santiago Barone</a></p>
+        <p class="credits-copy">Copyright © 2025 Municipalidad de Alberti. Todos los derechos libres de uso.</p>
+      </div>
+    </footer>
+  </body>
+</html>
